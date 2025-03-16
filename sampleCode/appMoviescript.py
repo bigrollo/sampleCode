@@ -34,8 +34,8 @@ json_mode_agent= Agent(
 )
 
 structured_output_agent= Agent(
-    model=OpenAIChat(id="gpt-4o"),
-    #model=Groq(id=theModel),
+    #model=OpenAIChat(id="gpt-4o"),
+    model=Groq(id=theModel),
     description="You write movie scripts",
     response_model=MovieScript,
     structured_outputs=True,
